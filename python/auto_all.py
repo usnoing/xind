@@ -14,8 +14,8 @@ def create_daily_file():
     # 生成文件名前缀
     prefix = f"{year}n{month}y{day}r"
     
-    # 获取当前目录
-    current_dir = os.getcwd()
+    # 获取脚本所在目录
+    current_dir = os.path.dirname(os.path.abspath(__file__))
     
     # 查找已有的文件序号
     pattern = rf"^{re.escape(prefix)}-(\d+)\.py$"
@@ -36,7 +36,7 @@ def create_daily_file():
     with open(new_filepath, 'w', encoding='utf-8') as f:
         f.write("")  # 创建空文件
     
-    print(f"✓ 成功创建文件: {new_filename}")
+    print(f"yes: {new_filename}")
     return new_filename
 
 if __name__ == "__main__":

@@ -26,3 +26,19 @@ import tensorflow 深度学习框架
 import torch 深度学习框架(PyTorch)
 import sklearn 机器学习库
 import pytest 测试框架
+
+#未分类
+import os 操作文件或者获取当前路径
+例如 
+os.getcwd()           # 获取当前目录
+os.listdir()          # 遍历目录中的文件
+os.path.join()        # 组合文件路径
+
+
+from datetime import datetime 日期和时间处理
+可以直接获取当前年月日
+datetime.now()   # 获取当前日期时间
+today.year       # 提取年份
+today.month      # 提取月份
+today.day        # 提取日期
+
